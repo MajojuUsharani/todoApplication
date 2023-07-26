@@ -46,6 +46,7 @@ const hasPriorityProperty = (requestQuery) => {
 const hasStatusProperty = (requestQuery) => {
   return requestQuery.status !== undefined;
 };
+
 app.get("/todos/", async (request, response) => {
   let data = null;
   let getTodosQuery = "";
